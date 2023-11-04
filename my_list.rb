@@ -6,13 +6,13 @@ class MyList
     @list = list
   end
 
-  def each(&block)
+  def each()
     counter = 0
-  while counter < @list.length
-    yield(@list[counter])
-  counter += 1
-end
-@list
+    while counter < @list.length
+      yield(@list[counter])
+      counter += 1
+    end
+    @list
   end
 end
 
