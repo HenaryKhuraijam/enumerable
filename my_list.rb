@@ -7,7 +7,12 @@ class MyList
   end
 
   def each(&block)
-    @list.each(&block)
+    counter = 0
+  while counter < @list.length
+    yield(@list[counter])
+  counter += 1
+end
+@list
   end
 end
 
